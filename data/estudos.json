@@ -1,0 +1,86 @@
+{
+    "versao": 1,
+    "estudos": [
+        {
+            "id": "e2dfd552-f0c5-4523-bbee-6513e8b7bdd7",
+            "data": "2026-09-07",
+            "hora_inicio": "15:38",
+            "duracao_minutos": 90,
+            "assunto": "Java",
+            "topico": "Streams",
+            "conteudo": "Estudei Java Streams. Entendi map e filter, mas tive dificuldade com reduce.",
+            "compreensao": 3,
+            "dificuldades": [
+                "reduce"
+            ],
+            "aprendizados": [
+                "Entendi como map transforma elementos",
+                "Entendi como filter seleciona elementos"
+            ],
+            "proximo_passo": "Praticar reduce com exemplos reais",
+            "tags": [
+                "java",
+                "streams"
+            ],
+            "status": "concluido"
+        },
+        {
+            "id": "5da34efb-94ba-4281-9ca4-d32c155f2169",
+            "data": "2026-09-07",
+            "hora_inicio": "20:16",
+            "duracao_minutos": 90,
+            "assunto": "Machine Learning com Python",
+            "topico": "Python para uso com IA",
+            "conteudo": "Estudei como usar Python para manipular junto a uma IA. Mais específica a IA Ollama na versão 3.2.",
+            "compreensao": 2,
+            "dificuldades": [
+                "difícil"
+            ],
+            "aprendizados": [
+                "Aprendi a como fazer as funções e ligar direto com a IA local",
+                "aprendi como arquitetar um projeto e que nele deve ter ia/data/prompts/repositores/services/e as funções básicas."
+            ],
+            "proximo_passo": "Continuar aprimorando o projeto e utilizar ele. ",
+            "tags": [],
+            "status": "concluido"
+        },
+        {
+            "id": "ba14d2e0-1c28-4ba3-8d8a-30a7691edc6e",
+            "data": "2026-09-07",
+            "hora_inicio": "21:02",
+            "duracao_minutos": 30,
+            "assunto": "Filosofia",
+            "topico": "Estoicismo",
+            "conteudo": "Estudei o livro de Seneca sobre a brevidade da vida. Que não devemos deixar as coisas para depois e focar no que é importante. ",
+            "compreensao": 3,
+            "dificuldades": [
+                "A linguagem do livro foi uma dificuldade."
+            ],
+            "aprendizados": [
+                "Aprendi sobre o que devemos focar e não deixar nada para depois."
+            ],
+            "proximo_passo": "Continuar lendo o livro e compreendendo como viver melhor. ",
+            "tags": [],
+            "status": "concluido"
+        },
+        {
+            "id": "2a77d682-e94a-48b9-b3e4-8ebd8f7571c4",
+            "data": "2026-09-08",
+            "hora_inicio": "21:02",
+            "duracao_minutos": 30,
+            "assunto": "Gestão",
+            "topico": "Montagem de Equipes ",
+            "conteudo": "Na montagem de equipes é importante alinhar as expectativas, deixando claro: O que fazer/Quais instrumentos irá se servir/O que é esperado da sua tarefa. Estudei também o que é Matriz Apertada, que nada mais é do que juntar os melhores membros em um só local. Anotei também que governança visa priorizar a melhores práticas, diminuir burocracias, servir das melhores ferramentas, concordando as tarefas com os objetivos da organização. ",
+            "compreensao": 5,
+            "dificuldades": [],
+            "aprendizados": [
+                "Matriz Apertada",
+                "Como alinhar expectativa",
+                "o que faz a governança na gestão de projetos."
+            ],
+            "proximo_passo": "Entender melhor como se portar como gestor. ",
+            "tags": [],
+            "status": "concluido"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+1. Arquitetura ← estamos aqui
+2. Modelagem dos dados
+3. Estrutura das pastas
+4. Repository JSON
+5. Serviço de estudos
+6. Interface /anotar
+7. Serviço de conversação
+8. Integração com Llama 3.2
+9. Memória de curto/longo prazo
+10. Análise semanal
+11. Automação de domingo
+12. Dashboard
+13. SQLite
+14. RAG/vector database

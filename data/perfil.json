@@ -1,0 +1,71 @@
+{
+    "versao": 1,
+
+    "perfil": {
+        "nome": "Danilo",
+
+        "objetivos": [
+            {
+                "id": "obj-001",
+                "descricao": "Aprofundar meus conhecimentos em Java",
+                "categoria": "profissional",
+                "prioridade": "alta",
+                "status": "ativo",
+                "prazo": null
+            }
+        ],
+
+        "areas_interesse": [
+            "Java",
+            "Python",
+            "Machine Learning",
+            "Inteligência Artificial",
+            "Banco de Dados",
+            "Engenharia de Software"
+        ],
+
+        "conhecimentos": [
+            {
+                "area": "Java",
+                "nivel": "intermediario"
+            },
+            {
+                "area": "Python",
+                "nivel": "intermediario"
+            }
+        ],
+
+        "preferencias_estudo": {
+            "duracao_sessao_preferida_minutos": 90,
+            "periodo_preferido": "noite",
+            "aprendizado_preferido": [
+                "pratica",
+                "projetos",
+                "exemplos"
+            ],
+            "formato_preferido": [
+                "texto",
+                "codigo",
+                "exercicios"
+            ]
+        },
+
+        "disponibilidade_estudo": {
+            "segunda": [],
+            "terca": [],
+            "quarta": [],
+            "quinta": [],
+            "sexta": [],
+            "sabado": [],
+            "domingo": []
+        },
+
+        "preferencias_ia": {
+            "tom": "direto",
+            "nivel_detalhamento": "alto",
+            "deve_questionar": true,
+            "deve_apontar_inconsistencias": true,
+            "deve_evitar_motivacao_vazia": true
+        }
+    }
+}

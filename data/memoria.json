@@ -1,0 +1,50 @@
+{
+    "versao": 1,
+    "memoria": {
+        "pontos_fortes": [
+            {
+                "nome": "Compreensão razoável do assunto Java",
+                "descricao": "A compreensão média do estudante foi de 3.0, indicando uma compreensão razoável do assunto."
+            }
+        ],
+        "dificuldades_recorrentes": [
+            {
+                "nome": "Dificuldade com o conceito de reduz",
+                "descricao": "A dificuldade com o conceito de reduz foi mencionada anteriormente na memória atual e continua a ser um problema."
+            },
+            {
+                "nome": "reduz",
+                "descricao": "A dificuldade com o conceito de reduz foi mencionada anteriormente na memória atual."
+            },
+            {
+                "nome": "reduz",
+                "descricao": "Dificuldade registrada em reduz pode ser um ponto de atenção importante"
+            }
+        ],
+        "lacunas_conhecimento": [],
+        "padroes_aprendizagem": [
+            {
+                "nome": "C concentração em um assunto específico",
+                "descricao": "O padrão de aprendizagem do estudante é de concentração em um assunto específico, o que pode ser um ponto forte, mas também pode indicar que ele precisa de mais diversidade em seus estudos."
+            }
+        ],
+        "preferencias_observadas": [],
+        "assuntos_para_revisar": [
+            {
+                "nome": "Conceitos de map, filter e reduce",
+                "descricao": "A dificuldade com o conceito de reduz é um ponto que poderia ser revisado."
+            }
+        ],
+        "evolucao_conhecimentos": [],
+        "observacoes_importantes": [
+            {
+                "data": "2026-09-07",
+                "observacao": "A análise semanal fornece mais detalhes sobre a evolução do estudante, mas não introduz informações novas que não estejam já presentes na memória atual."
+            },
+            {
+                "data": "2026-09-07",
+                "observacao": "Análise semanal fornece mais detalhes sobre a evolução do estudante"
+            }
+        ]
+    }
+}
