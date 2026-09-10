@@ -339,6 +339,117 @@
                     "Python para uso com IA"
                 ]
             }
+        },
+        {
+            "id": "6377c9de-cef1-40af-a3b6-2b1f3a54716a",
+            "periodo": {
+                "inicio": "2026-09-04",
+                "fim": "2026-09-10"
+            },
+            "gerado_em": "2026-09-10T07:32:06.248428",
+            "modelo": "llama3.2:latest",
+            "estatisticas": {
+                "sessoes": 4,
+                "tempo_total_minutos": 240,
+                "tempo_total_horas": 4.0,
+                "compreensao_media": 3.25,
+                "assuntos_estudados": [
+                    "Filosofia",
+                    "Gestão",
+                    "Java",
+                    "Machine Learning com Python"
+                ],
+                "topicos_estudados": [
+                    "Estoicismo",
+                    "Montagem de Equipes ",
+                    "Python para uso com IA",
+                    "Streams"
+                ]
+            },
+            "analise": {
+                "fatos_observados": [
+                    "Quantidade de sessões: 4",
+                    "Tempo total estudado: 240 minutos",
+                    "Assuntos estudados: Filosofia, Gestão, Java, Machine Learning com Python",
+                    "Tópicos estudados: Estoicismo, Montagem de Equipes, Python para uso com IA, Streams",
+                    "Nível médio de compreensão: 3.25",
+                    "Dificuldades explicitamente registradas: reduce, difícil",
+                    "Aprendizados explicitamente registrados: Entendido map e filter, Entendido como map transforma elementos, Entendido como filter seleciona elementos, Aprendi sobre o que devemos focar e não deixar nada para depois"
+                ],
+                "interpretacoes": [
+                    "Os tópicos de Streams e Python para uso com IA parecem exigir mais atenção devido à dificuldade registrada em reduce e a baixa compreensão do estudante.",
+                    "A dificuldade registrada em difícil não é suficiente para identificar qual conceito específico exige atenção.",
+                    "O estudo de Estoicismo demonstrou um bom nível de compreensão, mas a continuidade é necessária para aprofundar o conhecimento."
+                ],
+                "recomendacoes": [
+                    "Praticar reduce com exemplos reais",
+                    "Continuar aprimorando o projeto",
+                    "Aprofundar o conhecimento em Estoicismo"
+                ],
+                "prioridades": [
+                    "Java Streams - reduce",
+                    "Python para uso com IA"
+                ]
+            }
+        },
+        {
+            "id": "73fb19f2-8565-44e6-a174-f3178955b429",
+            "periodo": {
+                "inicio": "2026-09-04",
+                "fim": "2026-09-10"
+            },
+            "gerado_em": "2026-09-10T08:21:16.742253",
+            "modelo": "llama3.2:latest",
+            "estatisticas": {
+                "sessoes": 7,
+                "tempo_total_minutos": 390,
+                "tempo_total_horas": 6.5,
+                "compreensao_media": 3.86,
+                "assuntos_estudados": [
+                    "Filosofia",
+                    "Gestão",
+                    "Gestão de Projetos",
+                    "Java",
+                    "Machine Learning com Python",
+                    "Python"
+                ],
+                "topicos_estudados": [
+                    "Escopo",
+                    "Estoicismo",
+                    "Montagem de Equipes ",
+                    "Python para uso com IA",
+                    "Streams",
+                    "Tkinter"
+                ]
+            },
+            "analise": {
+                "fatos_observados": [
+                    "Quantidade de sessões: 7",
+                    "Tempo total estudado: 390 minutos ou 6.5 horas",
+                    "Assuntos estudados: Filosofia, Gestão, Gestão de Projetos, Java, Machine Learning com Python, Python",
+                    "Tópicos estudados: Escopo, Estoicismo, Montagem de Equipes, Python para uso com IA, Streams, Tkinter",
+                    "Nível médio de compreensão: 3.86",
+                    "Dificuldades explicitamente registradas: reduce, difícil, A linguagem do livro foi uma dificuldade.",
+                    "Aprendizados explicitamente registrados: Entendi map e filter, Entendi como map transforma elementos, Entendi como filter seleciona elementos, Matriz Apertada, Como alinhar expectativa, o que faz a governança na gestão de projetos, Aprendi sobre o que devemos focar e não deixar nada para depois, Entendi como é importante definir um bom escopo para gestão do projeto, Aprendi o que é escopo.",
+                    "Proximos passos: Praticar reduce com exemplos reais, Continuar aprimorando o projeto, Continuar lendo o livro e compreendendo como viver melhor, Entender melhor como se portar como gestor."
+                ],
+                "interpretacoes": [
+                    "Os tópicos de Python para uso com IA e Java Streams parecem exigir mais atenção.",
+                    "Existem sinais de dificuldade com a compreensão de reduce e a linguagem do livro.",
+                    "Existem sinais de evolução, pois o estudante conseguiu entender os conceitos de map e filter.",
+                    "O padrão de dificuldade com a compreensão de escopo não é recorrente, pois apenas dois estudos registraram essa dificuldade."
+                ],
+                "recomendacoes": [
+                    "Praticar reduce com exemplos reais",
+                    "Continuar aprimorando o projeto",
+                    "Continuar lendo o livro e compreendendo como viver melhor",
+                    "Entender melhor como se portar como gestor"
+                ],
+                "prioridades": [
+                    "Java Streams - reduce",
+                    "Python para uso com IA"
+                ]
+            }
         }
     ]
 }

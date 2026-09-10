@@ -50,29 +50,65 @@ def salvar_conversas(conversas):
         )
 
 
-def criar_mensagem(sessao_id, role, content, modelo=None):
+def criar_mensagem(
+    sessao_id,
+    role,
+    content,
+    modelo=None
+):
     """
     Cria uma nova mensagem padronizada.
     """
 
     return {
         "id": str(uuid.uuid4()),
+
         "sessao_id": sessao_id,
+
         "timestamp": datetime.now().isoformat(),
+
         "role": role,
+
         "content": content,
+
         "modelo": modelo
     }
 
 
-def conversar(sessao_id, mensagem_usuario):
+def buscar_mensagens_sessao(
+    sessao_id
+):
     """
-    Registra a mensagem do usuário,
-    envia o histórico para a IA,
-    registra a resposta e retorna o texto.
+    Retorna somente as mensagens
+    pertencentes à sessão atual.
     """
 
     conversas = carregar_conversas()
+
+    return [
+        conversa
+        for conversa in conversas
+        if conversa.get("sessao_id")
+        == sessao_id
+    ]
+
+
+def conversar(
+    sessao_id,
+    mensagem_usuario
+):
+    """
+    Registra a mensagem do usuário,
+    envia somente o histórico da sessão
+    atual para a IA, registra a resposta
+    e retorna o texto.
+    """
+
+    conversas = carregar_conversas()
+
+    # ==============================
+    # MENSAGEM DO USUÁRIO
+    # ==============================
 
     mensagem_usuario_obj = criar_mensagem(
         sessao_id=sessao_id,
@@ -80,27 +116,63 @@ def conversar(sessao_id, mensagem_usuario):
         content=mensagem_usuario
     )
 
-    conversas.append(mensagem_usuario_obj)
+    conversas.append(
+        mensagem_usuario_obj
+    )
+
+    # ==============================
+    # HISTÓRICO DA SESSÃO
+    # ==============================
+
+    mensagens_sessao = [
+        conversa
+        for conversa in conversas
+        if conversa.get("sessao_id")
+        == sessao_id
+    ]
+
+    # ==============================
+    # PREPARAR CONTEXTO DA IA
+    # ==============================
 
     mensagens_para_ia = [
         {
             "role": conversa["role"],
             "content": conversa["content"]
         }
-        for conversa in conversas
+
+        for conversa in mensagens_sessao
     ]
 
-    resposta = enviar_mensagem(mensagens_para_ia)
+    # ==============================
+    # ENVIAR PARA OLLAMA
+    # ==============================
+
+    resposta = enviar_mensagem(
+        mensagens_para_ia
+    )
+
+    # ==============================
+    # MENSAGEM DA IA
+    # ==============================
 
     mensagem_assistente = criar_mensagem(
         sessao_id=sessao_id,
         role="assistant",
         content=resposta,
-        modelo="llama3.2:latest"
+        modelo=NOME_MODELO
     )
 
-    conversas.append(mensagem_assistente)
+    conversas.append(
+        mensagem_assistente
+    )
 
-    salvar_conversas(conversas)
+    # ==============================
+    # SALVAR
+    # ==============================
+
+    salvar_conversas(
+        conversas
+    )
 
     return resposta

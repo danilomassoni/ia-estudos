@@ -81,6 +81,63 @@
             "proximo_passo": "Entender melhor como se portar como gestor. ",
             "tags": [],
             "status": "concluido"
+        },
+        {
+            "id": "f479d02f-52ab-4b61-bdd3-70728b6251de",
+            "data": "2026-09-10",
+            "hora_inicio": "07:54",
+            "duracao_minutos": 100,
+            "assunto": "Python",
+            "topico": "Tkinter",
+            "conteudo": "Estudei sobre a biblioteca em Python Tkinter, que cria interfaces desktops e conecta facilmente com as funções em Python.",
+            "compreensao": 4,
+            "dificuldades": [
+                "Entender sobre algumas funções dentro da biblioteca, como o \"pack\"."
+            ],
+            "aprendizados": [
+                "Aprendi a contectar ela ao service de forma que utiliza as funções facilmente as já utilizadas no Python puro."
+            ],
+            "proximo_passo": "Aprimorar a utilização da biblioteca.",
+            "tags": [],
+            "status": "concluido"
+        },
+        {
+            "id": "8954a1c1-400d-4a91-b4b0-8b3dee7a06c3",
+            "data": "2026-09-10",
+            "hora_inicio": "08:17",
+            "duracao_minutos": 20,
+            "assunto": "Gestão de Projetos",
+            "topico": "Escopo",
+            "conteudo": "O escopo (scope) em gestão de projetos é o conjunto de todas as atividades, entregas, limites e processos necessários (Somente o necessário mesmo) para concluir o projeto com sucesso.",
+            "compreensao": 5,
+            "dificuldades": [
+                "Nenhuma"
+            ],
+            "aprendizados": [
+                "Aprendi o que é escopo."
+            ],
+            "proximo_passo": "Aprimorar novos termos técnicos na Gestão de Projetos.",
+            "tags": [],
+            "status": "concluido"
+        },
+        {
+            "id": "22528f25-30f1-4e7a-b8df-7a1edb46c826",
+            "data": "2026-09-10",
+            "hora_inicio": "08:20",
+            "duracao_minutos": 30,
+            "assunto": "Gestão",
+            "topico": "Escopo",
+            "conteudo": "Escopo é o conjunto de todas as atividades, entregas, limites e processos necessários — e apenas o necessário — para concluir o projeto com sucesso. [1] (https://online.pucrs.br/blog/gerenciamento-escopo-projetos), [2] (https://www.nomus.com.br/blog-industrial/gerenciamento-de-projetos-a-definicao-do-escopo/)",
+            "compreensao": 5,
+            "dificuldades": [
+                "Nenhuma"
+            ],
+            "aprendizados": [
+                "Entendi como é importante definir um bom escopo para gestão do projeto."
+            ],
+            "proximo_passo": "Aprimorar novas técnicas sobre gestão.",
+            "tags": [],
+            "status": "concluido"
         }
     ]
 }

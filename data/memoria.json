@@ -19,6 +19,10 @@
             {
                 "nome": "reduz",
                 "descricao": "Dificuldade registrada em reduz pode ser um ponto de atenção importante"
+            },
+            {
+                "nome": "reduce",
+                "descricao": "Dificuldade registrada em reduz pode ser um ponto de atenção importante"
             }
         ],
         "lacunas_conhecimento": [],
@@ -43,6 +47,10 @@
             },
             {
                 "data": "2026-09-07",
+                "observacao": "Análise semanal fornece mais detalhes sobre a evolução do estudante"
+            },
+            {
+                "data": "2026-09-10",
                 "observacao": "Análise semanal fornece mais detalhes sobre a evolução do estudante"
             }
         ]
