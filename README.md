@@ -1,22 +1,86 @@
 # IA de Estudos
 
-Aplicativo em Python para apoiar o estudo pessoal com uma assistente de IA local, usando Ollama. O projeto permite registrar sessões de estudo, conversar com a IA, gerar relatórios semanais, acompanhar memória de aprendizado e identificar padrões e prioridades de estudo.
+Aplicativo em Python para apoiar o estudo pessoal com uma assistente de IA local, usando Ollama. O projeto combina organização de estudos, análise de progresso, memória persistente e uma interface gráfica moderna para facilitar o acompanhamento do aprendizado.
 
 ## Visão geral
 
-Este projeto foi pensado para funcionar como um assistente pessoal de estudos. Ele combina:
+Este projeto foi pensado como um assistente pessoal de estudos. Ele permite:
 
-- registro de estudos manuais;
-- conversação em linguagem natural com um modelo local;
-- análise semanal de desempenho e progresso;
-- memória persistente do que o estudante aprendeu;
-- exportação/armazenamento em arquivos JSON para histórico.
+- registrar sessões de estudo com detalhes por assunto, tópico e tempo;
+- conversar com uma IA local em linguagem natural;
+- gerar relatórios semanais com análise de desempenho;
+- acompanhar memória e padrões de aprendizagem;
+- revisar conteúdos através de perguntas automatizadas;
+- visualizar tudo em uma interface gráfica com dashboard e navegação lateral.
 
-A aplicação usa o arquivo principal `main.py` como interface de interação via terminal e persiste dados em `data/` em formato JSON.
+A base do projeto ainda usa persistência em JSON em `data/`, mas o fluxo principal da experiência agora é a interface gráfica em Python com `customtkinter`.
 
 ---
 
-## Funcionalidades
+## Nova interface gráfica (GUI)
+
+A aplicação possui uma interface desktop moderna com menu lateral, páginas dedicadas e visualização de dados em tempo real.
+
+### Navegação principal
+
+A tela principal da aplicação inclui:
+
+- botão de menu lateral com acesso às áreas do sistema;
+- dashboard inicial com visão geral dos estudos;
+- telas separadas para cada funcionalidade;
+- layout responsivo com painel central para conteúdo principal;
+- tema escuro com visual limpo e focado em produtividade.
+
+### Telas disponíveis
+
+1. Dashboard
+   - indicadores de sessões, tempo total e média de compreensão;
+   - assuntos mais estudados;
+   - pontos que precisam de atenção;
+   - próximas prioridades e próximos passos;
+   - lista de estudos recentes.
+
+2. Registrar estudo
+   - formulário para inserir assunto, tópico, conteúdo, duração e compreensão;
+   - campos para dificuldades, aprendizados e próximo passo;
+   - gravação dos dados em arquivo JSON para análise posterior.
+
+3. Chat IA
+   - conversa em tempo real com a IA local;
+   - histórico da sessão em uma área de mensagens;
+   - envio por teclado ou botão;
+   - contexto da conversa mantido na sessão atual.
+
+4. Relatório semanal
+   - geração de análise baseada nos últimos 7 dias;
+   - atualização automática da memória após a análise;
+   - apresentação do relatório em tela com estrutura textual organizada.
+
+5. Memória
+   - visão das categorias de memória do estudante;
+   - pontos fortes;
+   - dificuldades recorrentes;
+   - lacunas de conhecimento;
+   - padrões de aprendizagem;
+   - assuntos para revisar;
+   - evolução dos conhecimentos;
+   - observações importantes.
+
+6. Histórico
+   - listagem dos estudos registrados;
+   - ordenação por data mais recente;
+   - visão resumida por sessão com detalhes do estudo.
+
+7. Revisão inteligente
+   - seleção de período, assunto e tópico;
+   - geração de perguntas por IA com base nos estudos;
+   - avaliação da resposta do usuário;
+   - progresso da revisão por pergunta;
+   - feedback e pontuação da performance.
+
+---
+
+## Funcionalidades do sistema
 
 ### 1. Registro de estudo
 O usuário pode registrar:
@@ -25,57 +89,61 @@ O usuário pode registrar:
 - tópico específico;
 - resumo do conteúdo estudado;
 - duração em minutos;
-- nível de compreensão (1 a 5);
-- dificuldades;
-- aprendizados;
-- próximo passo.
+- nível de compreensão de 1 a 5;
+- dificuldades encontradas;
+- aprendizados adquiridos;
+- próximo passo para continuar evoluindo.
 
-Esses dados são guardados em `data/estudos.json`.
+Esses dados são salvos em `data/estudos.json`.
 
-### 2. Conversa com IA
-A aplicação conversa com um modelo local de IA via Ollama. O histórico da conversa é salvo em `data/conversas.json` e enviado ao modelo para manter contexto da sessão.
+### 2. Chat com IA local
+A aplicação conversa com um modelo local de IA via Ollama. O histórico da conversa pode ser mantido por sessão e usado para contextualizar a resposta da IA.
 
-### 3. Relatório semanal
+### 3. Dashboard analítico
+A dashboard extrai estatísticas dos estudos, como:
+
+- número de sessões;
+- tempo total estudado;
+- média de compreensão;
+- assuntos mais frequentes;
+- pontos de atenção;
+- próximos passos sugeridos.
+
+### 4. Relatório semanal
 A partir dos estudos registrados, o sistema:
 
-- calcula estatísticas;
-- reúne assuntos e tópicos estudados;
-- analisa dificuldades e interpretações;
-- sugere recomendações e prioridades.
+- calcula métricas e tendência de aprendizado;
+- reune temas e tópicos estudados;
+- analiza dificuldades e interpretações;
+- sugere recomendações e prioridades de estudo.
 
 Os relatórios ficam em `data/relatorios.json`.
 
-### 4. Memória de aprendizado
+### 5. Memória de aprendizado
 A memória do sistema guarda observações relevantes, como:
 
 - pontos fortes;
 - dificuldades recorrentes;
 - lacunas de conhecimento;
 - padrões de aprendizagem;
+- preferências observadas;
 - assuntos para revisar;
-- evolução de conhecimento;
+- evolução dos conhecimentos;
 - observações importantes.
 
-Essas informações são atualizadas após o relatório semanal.
-
-### 5. Interface no terminal
-A aplicação funciona em linha de comando, com comandos especiais:
-
-- `/estudar` — registrar estudo manualmente;
-- `/relatorio` — gerar relatório semanal;
-- `/memoria` — visualizar memória consolidada;
-- `/ajuda` — mostrar comandos;
-- `/sair` — encerrar a aplicação.
+### 6. Revisão inteligente
+A funcionalidade de revisão gera perguntas sobre os tópicos estudados e avalia a resposta do usuário com feedback em linguagem natural. Isso ajuda a consolidar o conteúdo e identificar lacunas de compreensão.
 
 ---
 
 ## Tecnologias utilizadas
 
 - Python 3
-- Ollama
-- Modelo: `llama3.2:latest`
+- `customtkinter` para a interface gráfica
+- Ollama para execução local de IA
+- Modelo recomendado: `llama3.2:latest`
 - JSON para persistência de dados
-- Estrutura modular por serviços e repositórios
+- Arquitetura modular com `interface/`, `services/`, `repositories/` e `ai/`
 
 ---
 
@@ -91,13 +159,25 @@ ia-estudos/
 │   ├── __init__.py
 │   ├── analyzers.py
 │   ├── ollama_client.py
-│   └── prompt.py
+│   ├── prompt.py
+│   └── revisao_ai.py
 ├── data/
 │   ├── conversas.json
 │   ├── estudos.json
 │   ├── memoria.json
 │   ├── perfil.json
-│   └── relatorios.json
+│   ├── relatorios.json
+│   └── revisoes.json
+├── interface/
+│   ├── __init__.py
+│   ├── app.py
+│   ├── chat_view.py
+│   ├── dashboard_view.py
+│   ├── estudo_view.py
+│   ├── historico_view.py
+│   ├── memoria_view.py
+│   ├── relatorio_view.py
+│   └── revisao_view.py
 ├── prompts/
 │   ├── consolidar_memoria.txt
 │   ├── mentor.txt
@@ -112,19 +192,23 @@ ia-estudos/
 ├── services/
 │   ├── __init__.py
 │   ├── conversa_service.py
+│   ├── dashboard_service.py
 │   ├── estudo_service.py
 │   ├── memoria_service.py
-│   └── relatorio_service.py
-└── README.md
+│   ├── relatorio_service.py
+│   └── revisao_service.py
+├── README.md
+└── .gitignore
 ```
 
 ### Descrição das pastas
 
-- `ai/`: integração com a IA e lógica de prompt.
-- `services/`: regras de negócio e orquestração de estudo, conversa, memória e relatórios.
+- `ai/`: integração com a IA, prompts e geração de respostas/revisões.
+- `interface/`: interface gráfica principal em `customtkinter`.
+- `services/`: regras de negócio e orchestramento do fluxo de estudo, memória e relatórios.
 - `repositories/`: camada de persistência e leitura dos dados em JSON.
-- `data/`: armazenamento dos dados do projeto.
-- `prompts/`: arquivos de prompt para análise e memória.
+- `data/`: armazenamento dos dados do usuário e do sistema.
+- `prompts/`: arquivos de prompt usados para memória, relatório e interação com a IA.
 
 ---
 
@@ -134,7 +218,7 @@ ia-estudos/
 
 - Python 3.9 ou superior
 - Ollama instalado e em execução
-- Modelo local baixado:
+- Modelo local disponível:
 
 ```bash
 ollama pull llama3.2:latest
@@ -142,19 +226,24 @@ ollama pull llama3.2:latest
 
 ### 2. Instalação das dependências
 
-No momento, o projeto depende principalmente da biblioteca `ollama` para Python. Instale-a com:
+Instale as bibliotecas necessárias:
 
 ```bash
-pip install ollama
+pip install customtkinter ollama
 ```
 
-Se você quiser, pode também criar um ambiente virtual:
+Se preferir, crie um ambiente virtual:
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Linux/macOS
-.venv\Scripts\activate     # Windows
-pip install ollama
+
+# Linux/macOS
+source .venv/bin/activate
+
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+pip install customtkinter ollama
 ```
 
 ### 3. Configuração do modelo
@@ -166,37 +255,35 @@ NOME_MODELO = "llama3.2:latest"
 DIRETORIO_DATA = "data"
 ```
 
-Você pode alterar o modelo para outro disponível no Ollama, caso deseje.
+Você pode trocar o modelo para outro disponível no Ollama se quiser utilizar uma variante diferente.
 
 ---
 
 ## Como usar
 
-### Executar o projeto
+### Executar a interface gráfica
+
+A forma principal de uso do projeto agora é via GUI:
+
+```bash
+python interface/app.py
+```
+
+Também existe a versão em terminal, ainda útil para testes e uso legado:
 
 ```bash
 python main.py
 ```
 
-### Comandos disponíveis
+### Fluxo recomendado de uso
 
-Depois de iniciar o programa, você verá o menu com os comandos:
-
-```text
-/estudar
-/relatorio
-/memoria
-/ajuda
-/sair
-```
-
-### Fluxo típico de uso
-
-1. Registrar estudo com `/estudar`.
-2. Conversar livremente com a IA.
-3. Gerar um relatório semanal com `/relatorio`.
-4. Consultar memória com `/memoria`.
-5. Acompanhar padrões de aprendizado e próximos passos.
+1. Abra a aplicação e navegue pelo menu lateral.
+2. Registre seu estudo na tela de "Estudar".
+3. Converse com a IA na aba de chat.
+4. Analise o desempenho no Dashboard.
+5. Gere o relatório semanal.
+6. Consulte a memória e acompanhe os pontos de atenção.
+7. Faça revisões por assunto e tópico para consolidar o aprendizado.
 
 ---
 
@@ -208,7 +295,8 @@ A pasta `data/` contém os arquivos de persistência:
 - `conversas.json` — histórico das conversas com a IA;
 - `memoria.json` — memória consolidada do estudante;
 - `relatorios.json` — relatórios semanais gerados;
-- `perfil.json` — perfil do usuário (ainda pode ser expandido).
+- `revisoes.json` — revisões e avaliações realizadas;
+- `perfil.json` — dados de perfil e configuração do usuário.
 
 ---
 
@@ -216,38 +304,49 @@ A pasta `data/` contém os arquivos de persistência:
 
 ### Registro de estudo
 
-O processo começa em `main.py` quando o usuário chama `/estudar`. A função `registrar_estudo_manual()` coleta as informações do estudo e envia para `services.estudo_service.registrar_estudo()`.
+O formulário de estudo coleta as informações da sessão e salva em `services.estudo_service`, que grava os dados no arquivo JSON.
 
 ### Conversa
 
-Quando o usuário envia uma mensagem normal, `main.py` chama `services.conversa_service.conversar()`, que:
+Na tela de chat, a aplicação envia a mensagem para `services.conversa_service.conversar()`, que:
 
-1. carrega o histórico;
-2. monta a mensagem para a IA;
-3. envia para o Ollama;
+1. carrega o histórico da sessão;
+2. monta o prompt para a IA;
+3. envia a mensagem ao Ollama;
 4. salva a resposta no histórico.
 
-### Relatório semanal
+### Dashboard e relatórios
 
-A função `gerar_relatorio_semana()` chama `services.relatorio_service.gerar_relatorio()`, que:
+O dashboard e os relatórios usam os estudos salvos para gerar métricas, identificar pontos fracos e sugerir prioridades.
 
-1. busca todos os estudos do período;
-2. gera um resumo estatístico;
-3. monta um prompt para análise;
-4. usa a IA para separar fatos, interpretações e recomendações;
-5. salva o relatório.
+### Memória
 
-### Atualização da memória
+Depois de gerar um relatório, o sistema atualiza a memória com informações relevantes para revisão e planejamento futuro.
 
-Após gerar o relatório, o sistema chama `services.memoria_service.atualizar_memoria()`, que compara os novos dados com a memória atual e atualiza as observações relevantes.
+### Revisão inteligente
+
+Com base nos estudos do período selecionado, o sistema gera perguntas e avalia respostas para reforçar a fixação do conteúdo.
 
 ---
 
 ## Observações importantes
 
-- O projeto foi criado para uso local e simples em terminal.
-- Os dados são guardados em arquivos JSON, não em banco de dados.
-- A IA depende do Ollama e do modelo escolhido no arquivo `config.py`.
+- O projeto foi evoluído para uma experiência visual e prática com GUI.
+- A persistência continua em JSON, sem banco de dados externo.
+- A IA depende do Ollama e do modelo definido em `config.py`.
+- O projeto é adequado para uso local, pessoal e de acompanhamento de estudo.
+
+---
+
+## Próximos passos possíveis
+
+- melhorar a aparência e usabilidade da interface;
+- adicionar exportação de relatórios em PDF ou TXT;
+- implementar filtros por períodos e assuntos na dashboard;
+- expandir a memória com histórico de evolução por tema;
+- adicionar autenticação ou múltiplos perfis de estudo.
+
+Se você quiser, posso também ajustar o README para um formato mais profissional, com badges, screenshots e instruções de instalação mais detalhadas.
 - A estrutura sugere evolução para arquitetura mais robusta no futuro, como SQLite, dashboard e RAG.
 
 ---
