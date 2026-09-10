@@ -393,11 +393,14 @@ Este projeto ainda não possui uma licença formal definida no repositório. Se 
 
 Projeto desenvolvido para uso pessoal de estudo com IA local.
 
-Se quiser, posso também criar uma versão mais profissional do README com:
+Contribuições são bem-vindas!
 
-- badges;
-- seção de screenshots;
-- instruções para Windows/Linux/macOS;
-- tabela de comandos;
-- roadmap em formato de produto;
-- documentação de arquitetura mais detalhada.
+Caso queira contribuir com o projeto:
+
+1. Faça um **Fork** deste repositório.
+2. Crie uma nova branch para sua alteração:
+   ```bash
+   git checkout -b minha-contribuicao
+3. git commit -m "feat: descreva sua alteração"
+4. git push origin minha-contribuicao
+5. Abra um Pull Request neste repositório descrevendo as alterações realizadas.
