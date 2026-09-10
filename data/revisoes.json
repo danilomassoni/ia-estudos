@@ -1,0 +1,745 @@
+{
+    "versao": 1,
+    "revisoes": [
+        {
+            "id": "ff302550-6c36-4fa0-9a44-a903508eae96",
+            "data_criacao": "2026-09-10T08:59:01.458362",
+            "periodo": {
+                "inicio": "2026-09-07",
+                "fim": "2026-09-10"
+            },
+            "assunto": "Java",
+            "topicos": [
+                "Streams"
+            ],
+            "quantidade_perguntas": 5,
+            "dificuldade": "adaptativa",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Exista um método para reduzir uma coleção de números em um único valor?",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 2,
+                    "topico": "Streams",
+                    "tipo": "aplicação",
+                    "enunciado": "Crie um código Java que calcule a média de uma lista de números",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 3,
+                    "topico": "Streams",
+                    "tipo": "análise",
+                    "enunciado": "Exista uma diferença entre map e filter em Java Streams?",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 4,
+                    "topico": "Streams",
+                    "tipo": "explicação",
+                    "enunciado": "Explicar o conceito de reduce em Java Streams de forma simples",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 5,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é o propósito do método reduce() em Java Streams?",
+                    "dificuldade": "baixa"
+                }
+            ],
+            "respostas": [],
+            "resultado": null,
+            "status": "perguntas_geradas"
+        },
+        {
+            "id": "9b233f21-09e7-4f28-8376-75fc22f976ea",
+            "data_criacao": "2026-09-10T09:19:01.231287",
+            "periodo": {
+                "inicio": "2026-09-07",
+                "fim": "2026-09-10"
+            },
+            "assunto": "Java",
+            "topicos": [
+                "Streams"
+            ],
+            "quantidade_perguntas": 5,
+            "dificuldade": "adaptativa",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "estudo_origem": 2,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é a diferença entre map() e filter() em Java Streams?",
+                    "dificuldade": "facil"
+                },
+                {
+                    "id": 2,
+                    "estudo_origem": 2,
+                    "topico": "Streams",
+                    "tipo": "aplicação",
+                    "enunciado": "Considere a seguinte lista de números inteiros: [1, 2, 3, 4, 5]. Qual é a soma dos números ímpares?",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 3,
+                    "estudo_origem": 2,
+                    "topico": "Streams",
+                    "tipo": "análise",
+                    "enunciado": "Analisar o código a seguir: List<Integer> lista = Arrays.asList(1, 2, 3, 4, 5); int soma = lista.stream().filter(i -> i % 2 != 0).reduce(0, (a, b) -> a + b); Qual é a soma dos números ímpares da lista?",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 4,
+                    "estudo_origem": 2,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é o resultado de aplicar o método findFirst() a uma coleção de números inteiros?",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 5,
+                    "estudo_origem": 2,
+                    "topico": "Streams",
+                    "tipo": "explicação",
+                    "enunciado": "Explique o conceito de reduce() em Java Streams.",
+                    "dificuldade": "alta"
+                }
+            ],
+            "respostas": [],
+            "resultado": null,
+            "status": "perguntas_geradas"
+        },
+        {
+            "id": "ea55805c-e3e8-4fad-910c-cca02fc460db",
+            "data_criacao": "2026-09-10T09:28:45.649001",
+            "periodo": {
+                "inicio": "2026-09-07",
+                "fim": "2026-09-10"
+            },
+            "assunto": "Java",
+            "topicos": [
+                "Streams"
+            ],
+            "quantidade_perguntas": 5,
+            "dificuldade": "adaptativa",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "estudo_origem": "2026-09-07",
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é a diferença entre map() e filter() em Java Streams?",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 2,
+                    "estudo_origem": "2026-09-07",
+                    "topico": "Streams",
+                    "tipo": "aplicação",
+                    "enunciado": "Escreva um código que utilize map() e filter() para filtrar uma lista de números e calcular a soma de todos os números pares.",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 3,
+                    "estudo_origem": "2026-09-07",
+                    "topico": "Streams",
+                    "tipo": "análise",
+                    "enunciado": "Análise o código abaixo para entender como o método reduce() é utilizado: `List<Integer> lista = Arrays.asList(1, 2, 3, 4); List<Integer> resultado = lista.stream().map(x -> x * 2).reduce((x, y) -> x + y, (x, y) -> x + y);`",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 4,
+                    "topico": "Streams",
+                    "tipo": "explicação",
+                    "enunciado": "Explique em suas próprias palavras o que é o método reduce() em Java Streams e como ele é utilizado.",
+                    "dificuldade": "media",
+                    "estudo_origem": "2026-09-07"
+                },
+                {
+                    "id": 5,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Quando utilizar o método reduce() em Java Streams em vez de map() ou filter()?",
+                    "dificuldade": "facil",
+                    "estudo_origem": "2026-09-07"
+                }
+            ],
+            "respostas": [
+                {
+                    "pergunta_id": 1,
+                    "resposta": "map transforma os elementos de um Stream,\nenquanto filter seleciona os elementos\nque atendem a uma condição.",
+                    "avaliacao": {
+                        "classificacao": "parcial",
+                        "pontuacao": 6,
+                        "feedback": "A resposta demonstra compreensão de map e filter, mas não explora a diferença entre os dois conceitos. Falta a compreensão de como reduce funciona.",
+                        "pontos_corretos": [
+                            "map transforma os elementos de um Stream",
+                            "filter seleciona os elementos que atendem a uma condição"
+                        ],
+                        "pontos_faltantes": [
+                            "reduce",
+                            "diferença entre map e filter"
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T10:23:08.013314"
+                },
+                {
+                    "pergunta_id": 1,
+                    "resposta": "map transforma os elementos de um Stream,\n    enquanto filter seleciona os elementos\n    que atendem a uma condição.",
+                    "avaliacao": {
+                        "classificacao": "parcial",
+                        "pontuacao": 6,
+                        "feedback": "A resposta demonstra compreensão do conceito, mas falha em destacar a diferença entre map() e filter() em termos de operação.",
+                        "pontos_corretos": [
+                            "Transforma os elementos de um Stream",
+                            "Seleciona os elementos que atendem a uma condição"
+                        ],
+                        "pontos_faltantes": [
+                            "Diferença entre map() e filter() em termos de operação"
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T10:32:18.490577"
+                },
+                {
+                    "pergunta_id": 2,
+                    "resposta": "Para usar filter eu poderia selecionar\n    apenas os números maiores que 3.",
+                    "avaliacao": {
+                        "classificacao": "incorreta",
+                        "pontuacao": 4,
+                        "feedback": "A resposta demonstra habilidade em utilizar filter, mas não demonstra compreensão de map, e não fornece solução para a questão completa.",
+                        "pontos_corretos": [
+                            "Utilização do filter"
+                        ],
+                        "pontos_faltantes": [
+                            "Utilização do map",
+                            "Solução completa para a questão"
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T10:32:21.893207"
+                },
+                {
+                    "pergunta_id": 3,
+                    "resposta": "O filter seleciona os números ímpares e\n    o reduce pode acumular esses valores para\n    produzir a soma.",
+                    "avaliacao": {
+                        "classificacao": "parcial",
+                        "pontuacao": 6,
+                        "feedback": "A resposta demonstra compreensão do conceito, mas não explora completamente o método reduce() e sua aplicação.",
+                        "pontos_corretos": [
+                            "Entendeu como o filter seleciona elementos",
+                            "Entendeu como o reduce pode acumular valores",
+                            "Entendeu a aplicação do reduce em um exemplo concreto"
+                        ],
+                        "pontos_faltantes": [
+                            "Faltou explicar como o reduce() opera com os elementos da lista",
+                            "Faltou justificar por que o reduce() é usado em vez de outra opção",
+                            "Faltou explorar todas as possibilidades do método reduce() e suas implicações"
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T10:32:27.193128"
+                },
+                {
+                    "pergunta_id": 4,
+                    "resposta": "findFirst retorna o primeiro elemento encontrado\n    no Stream.",
+                    "avaliacao": {
+                        "classificacao": "parcial",
+                        "pontuacao": 6,
+                        "feedback": "A resposta demonstra conhecimento do conceito, mas falta a explicação completa.",
+                        "pontos_corretos": [
+                            "Acentua a importância do método reduce() em Java Streams."
+                        ],
+                        "pontos_faltantes": [
+                            "Não menciona explicitamente o que é o método reduce() e como ele é utilizado.",
+                            "A resposta não é completa, pois não explica o papel do método reduce() em comparação com outros métodos de Java Streams."
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T10:32:31.066220"
+                },
+                {
+                    "pergunta_id": 5,
+                    "resposta": "reduce permite combinar os elementos de um Stream\n    em um único resultado, utilizando uma operação\n    de redução.",
+                    "avaliacao": {
+                        "classificacao": "parcial",
+                        "pontuacao": 6,
+                        "feedback": "A resposta demonstra conhecimento de map e filter, mas não explora o conceito de reduce como se fosse uma operação de combinação de elementos.",
+                        "pontos_corretos": [
+                            "Entendeu como map transforma elementos",
+                            "Entendeu como filter seleciona elementos"
+                        ],
+                        "pontos_faltantes": [
+                            "Não explicou de forma clara o motivo pelo qual reduce é preferível a map ou filter em certas situações."
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T10:32:34.971567"
+                }
+            ],
+            "resultado": {
+                "total_perguntas": 5,
+                "total_respondidas": 6,
+                "acertos": 0,
+                "parciais": 5,
+                "erros": 1,
+                "pontuacao_media": 5.67,
+                "por_topico": {
+                    "Streams": {
+                        "perguntas": 5,
+                        "respondidas": 6,
+                        "pontuacao_total": 34,
+                        "pontuacao_media": 5.67,
+                        "acertos": 0,
+                        "parciais": 5,
+                        "erros": 1
+                    }
+                },
+                "pontos_fracos": [
+                    "Streams"
+                ]
+            },
+            "status": "concluida"
+        },
+        {
+            "id": "74dcd440-3ed6-4787-9118-af1cf31a1a87",
+            "data_criacao": "2026-09-10T10:54:26.394110",
+            "periodo": {
+                "inicio": "2026-09-07",
+                "fim": "2026-09-10"
+            },
+            "assunto": "Gestão",
+            "topicos": [
+                "Escopo"
+            ],
+            "quantidade_perguntas": 5,
+            "dificuldade": "adaptativa",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "estudo_origem": 1,
+                    "topico": "Escopo",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é a diferença entre um plano de negócios e um contrato de serviço?",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 2,
+                    "estudo_origem": 1,
+                    "topico": "Escopo",
+                    "tipo": "aplicação",
+                    "enunciado": "Um projeto de gestão de projeto deve incluir apenas as atividades essenciais para concluir o projeto com sucesso.",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 3,
+                    "estudo_origem": 1,
+                    "topico": "Escopo",
+                    "tipo": "análise",
+                    "enunciado": "O que é um 'ciclo de vida' de um projeto de gestão?",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 4,
+                    "estudo_origem": 2,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é a diferença entre uma lista e um array em Java?",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 5,
+                    "estudo_origem": 3,
+                    "topico": "Escopo",
+                    "tipo": "aplicação",
+                    "enunciado": "Um projeto de gestão de projeto deve ser dividido em fases lógicas claras e justificáveis.",
+                    "dificuldade": "facil"
+                }
+            ],
+            "respostas": [],
+            "resultado": null,
+            "status": "perguntas_geradas"
+        },
+        {
+            "id": "569b547f-3339-41e0-a3c4-8ac2ead4b139",
+            "data_criacao": "2026-09-10T10:55:18.445279",
+            "periodo": {
+                "inicio": "2026-09-07",
+                "fim": "2026-09-10"
+            },
+            "assunto": "Gestão",
+            "topicos": [
+                "Escopo"
+            ],
+            "quantidade_perguntas": 5,
+            "dificuldade": "adaptativa",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "estudo_origem": "1",
+                    "topico": "Escopo",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é o conjunto de atividades necessárias para concluir o projeto com sucesso?",
+                    "dificuldade": "facil"
+                },
+                {
+                    "id": 2,
+                    "estudo_origem": "1",
+                    "topico": "Escopo",
+                    "tipo": "aplicação",
+                    "enunciado": "Descreva uma situação em que a definição de um bom escopo é crucial para a gestão do projeto.",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 3,
+                    "estudo_origem": "1",
+                    "topico": "Escopo",
+                    "tipo": "análise",
+                    "enunciado": "Analise o conteúdo do escopo e identifique o benefício principal de sua definição.",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 4,
+                    "topico": "Escopo",
+                    "tipo": "explicação",
+                    "enunciado": "Explicação do que é escopo e como ele afeta a gestão do projeto",
+                    "dificuldade": "facil",
+                    "estudo_origem": "1"
+                },
+                {
+                    "id": 5,
+                    "topico": "Gestão",
+                    "tipo": "aplicação",
+                    "enunciado": "Descreva um passo a passo para implementar a gestão do escopo em um projeto.",
+                    "dificuldade": "media",
+                    "estudo_origem": "2"
+                }
+            ],
+            "respostas": [],
+            "resultado": null,
+            "status": "perguntas_geradas"
+        },
+        {
+            "id": "acda9c47-f069-4c9a-a692-7d8c64769862",
+            "data_criacao": "2026-09-10T11:09:03.575006",
+            "periodo": {
+                "inicio": "2026-09-07",
+                "fim": "2026-09-10"
+            },
+            "assunto": "Java",
+            "topicos": [
+                "Streams"
+            ],
+            "quantidade_perguntas": 5,
+            "dificuldade": "adaptativa",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é a diferença entre map() e filter() em Java Streams?",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 2,
+                    "estudo_origem": 2,
+                    "topico": "Streams",
+                    "tipo": "aplicação",
+                    "enunciado": "Escreva um código que use o método map() para transformar uma lista de números em uma lista de quadrados",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 3,
+                    "estudo_origem": 3,
+                    "topico": "Streams",
+                    "tipo": "análise",
+                    "enunciado": "Analise o código abaixo e explica o que o método reduce() faz: System.out.println(Arrays.stream(new int[] {1, 2, 3}).reduce((a, b) -> a + b));",
+                    "dificuldade": "facil"
+                },
+                {
+                    "id": 4,
+                    "estudo_origem": 4,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é a condição necessária para que o método filter() retorne verdadeiro?",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 5,
+                    "estudo_origem": 5,
+                    "topico": "Streams",
+                    "tipo": "explicação",
+                    "enunciado": "Como o método map() transforma os elementos de uma lista?",
+                    "dificuldade": "media"
+                }
+            ],
+            "respostas": [
+                {
+                    "pergunta_id": 1,
+                    "resposta": "Map() mapeia as funções em java e filter() filtra.",
+                    "avaliacao": {
+                        "classificacao": "parcial",
+                        "pontuacao": 6,
+                        "feedback": "A resposta demonstra compreensão de map e filter, mas faltam detalhes sobre reduce.",
+                        "pontos_corretos": [
+                            "map",
+                            "filter"
+                        ],
+                        "pontos_faltantes": [
+                            "reduce"
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T11:09:46.926585"
+                }
+            ],
+            "resultado": null,
+            "status": "em_andamento"
+        },
+        {
+            "id": "fa8f1d61-9b23-469e-8252-cea95eba9818",
+            "data_criacao": "2026-09-10T11:17:13.713783",
+            "periodo": {
+                "inicio": "2026-09-07",
+                "fim": "2026-09-10"
+            },
+            "assunto": "Java",
+            "topicos": [
+                "Streams"
+            ],
+            "quantidade_perguntas": 5,
+            "dificuldade": "adaptativa",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "estudo_origem": "1",
+                    "topico": "Streams",
+                    "tipo": "aplicação",
+                    "enunciado": "Um array de números inteiros está sendo filtrado para remover todos os números menores que 10. Escreva um código em Java Streams para fazer isso.",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 2,
+                    "estudo_origem": "1",
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "O que é o método reduce() em Java Streams e como ele é usado?",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 3,
+                    "estudo_origem": "1",
+                    "topico": "Streams",
+                    "tipo": "análise",
+                    "enunciado": "Explaine como o método map() altera os elementos de um array de strings em Java Streams.",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 4,
+                    "estudo_origem": "1",
+                    "topico": "Streams",
+                    "tipo": "explicação",
+                    "enunciado": "Como você explicaria a diferença entre o método filter() e o método if() em Java Streams?",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 5,
+                    "estudo_origem": "1",
+                    "topico": "Streams",
+                    "tipo": "aplicação",
+                    "enunciado": "Um array de números inteiros está sendo ordenado em ordem ascendente. Escreva um código em Java Streams para fazer isso.",
+                    "dificuldade": "alta"
+                }
+            ],
+            "respostas": [
+                {
+                    "pergunta_id": 1,
+                    "resposta": "stream -> <0",
+                    "avaliacao": {
+                        "classificacao": "incorreta",
+                        "pontuacao": 2,
+                        "feedback": "A resposta não demonstra compreensão do conceito de filter em Java Streams. O código fornecido apenas remove números menores que 10, mas não explica o propósito do filter ou como ele funciona.",
+                        "pontos_corretos": [
+                            "Explicasse o propósito do filter e como ele funciona."
+                        ],
+                        "pontos_faltantes": [
+                            "Use o filter para remover números menores que 10 e explicar o resultado."
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T11:17:47.194577"
+                }
+            ],
+            "resultado": null,
+            "status": "em_andamento"
+        },
+        {
+            "id": "89334be8-18a4-47cb-9a2d-f22059ad57d6",
+            "data_criacao": "2026-09-10T11:21:57.118683",
+            "periodo": {
+                "inicio": "2026-09-07",
+                "fim": "2026-09-10"
+            },
+            "assunto": "Java",
+            "topicos": [
+                "Streams"
+            ],
+            "quantidade_perguntas": 5,
+            "dificuldade": "adaptativa",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "aplicação",
+                    "enunciado": "Qual é o resultado da aplicação do método map() sobre uma lista de números inteiros?",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 2,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "O que é a função do método filter() em Java Streams?",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 3,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "análise",
+                    "enunciado": "Como o método reduce() pode ser utilizado para calcular a soma de uma lista de números inteiros?",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 4,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": " explicação",
+                    "enunciado": "Explique o conceito de Stream em Java.",
+                    "dificuldade": "facil"
+                },
+                {
+                    "id": 5,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "codificação",
+                    "enunciado": "Escreva um código que utilize o método map() para converter uma lista de números inteiros em uma lista de números quadrados.",
+                    "dificuldade": "alta"
+                }
+            ],
+            "respostas": [
+                {
+                    "pergunta_id": 1,
+                    "resposta": "Ele traz todos os números.",
+                    "avaliacao": {
+                        "classificacao": "incorreta",
+                        "pontuacao": 4,
+                        "feedback": "A resposta não demonstra compreensão do conceito de map() de forma completa.",
+                        "pontos_corretos": [
+                            "O resultado da aplicação do método map() sobre uma lista de números inteiros não é apenas 'ele traz todos os números'."
+                        ],
+                        "pontos_faltantes": [
+                            "A resposta poderia ser mais específica sobre como o método map() transforma os elementos da lista."
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T11:22:21.392687"
+                }
+            ],
+            "resultado": null,
+            "status": "em_andamento"
+        },
+        {
+            "id": "9ad65551-d7a8-41a0-95bd-18d80289c4aa",
+            "data_criacao": "2026-09-10T11:38:45.328103",
+            "periodo": {
+                "inicio": "2026-09-07",
+                "fim": "2026-09-10"
+            },
+            "assunto": "Java",
+            "topicos": [
+                "Streams"
+            ],
+            "quantidade_perguntas": 5,
+            "dificuldade": "adaptativa",
+            "perguntas": [
+                {
+                    "id": 1,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "aplicação",
+                    "enunciado": "Um array de números é multiplicado por um valor número, qual é o resultado?",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 2,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Exemplifique como o método filter() utiliza um predicado para selecionar elementos de um colecionado",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 3,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "análise",
+                    "enunciado": "public List<String> listaFrase(List<String> listaDeFrases, Function<String, String> funçãoFrase) {\n  List<String> novaLista = new ArrayList();\n  for(String s : listaDeFrases) {\n    novaLista.add( funÃ§ÃoFrase.apply(s) );\n  }\n  return novaLista;\n}",
+                    "dificuldade": "alta"
+                },
+                {
+                    "id": 4,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "Qual é a diferença entre a função reduce() e a função accumulate() em Java Streams?",
+                    "dificuldade": "media"
+                },
+                {
+                    "id": 5,
+                    "estudo_origem": 1,
+                    "topico": "Streams",
+                    "tipo": "conceitual",
+                    "enunciado": "O que é a função reduce() e como ela pode ser usada para combinar elementos de um colecionado?",
+                    "dificuldade": "alta"
+                }
+            ],
+            "respostas": [
+                {
+                    "pergunta_id": 1,
+                    "resposta": "Ele tem resultado nulo.",
+                    "avaliacao": {
+                        "classificacao": "incorreta",
+                        "pontuacao": 6,
+                        "feedback": "A resposta demonstra uma compreensão parcial do conceito, mas não aborda corretamente a redução e não fornece o resultadoesperado.",
+                        "pontos_corretos": [
+                            "A resposta contém um resultado, embora não seja o resultado esperado."
+                        ],
+                        "pontos_faltantes": [
+                            "A redução, o resultado esperado e a explicação detalhada do conceito de multiplicaçãodo array por um valor número."
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T11:39:03.986261"
+                },
+                {
+                    "pergunta_id": 2,
+                    "resposta": "Utiliza para avaliar cada item do fluxo e maner apenas os elementos que aprovam nessa condição",
+                    "avaliacao": {
+                        "classificacao": "correta",
+                        "pontuacao": 8,
+                        "feedback": "A resposta demonstra compreensão do conceito de filter, mas não menciona explicitamente como reduz os elementos. A resposta correta seria: 'Utiliza para avaliar cada item do fluxo e manejar apenas os elementos que aprovam essa condição'.",
+                        "pontos_corretos": [
+                            "Entendeu como filter seleciona elementos",
+                            "Entendeu como avaliar cada item do fluxo"
+                        ],
+                        "pontos_faltantes": [
+                            "Excluiu explicitamente o reduz"
+                        ]
+                    },
+                    "data_resposta": "2026-09-10T11:40:53.307069"
+                }
+            ],
+            "resultado": null,
+            "status": "em_andamento"
+        }
+    ]
+}

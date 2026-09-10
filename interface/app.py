@@ -5,6 +5,7 @@ from interface.relatorio_view import RelatorioView
 from interface.memoria_view import MemoriaView
 from interface.historico_view import HistoricoView
 from interface.dashboard_view import DashboardView
+from interface.revisao_view import RevisaoView
 
 
 class App(ctk.CTk):
@@ -135,6 +136,13 @@ class App(ctk.CTk):
             "📈  Histórico",
             self.mostrar_historico
         )
+
+        self.criar_botao_menu(
+            "🧠  Revisão",
+            self.mostrar_revisao
+        )
+
+        
 
         # ==============================
         # ESPAÇO
@@ -543,6 +551,23 @@ class App(ctk.CTk):
         )
 
         self.historico_view.pack(
+            fill="both",
+            expand=True
+        )
+
+    # ==============================
+    # REVISÃO
+    # ==============================
+
+    def mostrar_revisao(self):
+
+        self.limpar_area()
+
+        self.revisao_view = RevisaoView(
+            self.area_principal
+        )
+
+        self.revisao_view.pack(
             fill="both",
             expand=True
         )
